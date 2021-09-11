@@ -1,1 +1,1 @@
-# SLP-Price-ticker
+# SLP-Price-Ticker
