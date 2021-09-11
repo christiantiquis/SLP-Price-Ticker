@@ -1,10 +1,15 @@
 from tkinter import *
 import requests
+import os
 
 from time import strftime
 
 gas_min = 188292
 gas_max = 196569
+
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using :0.0')
+    os.environ.__setitem__('DISPLAY', ':0.0')
 
 class UpdateLabel():
 
