@@ -16,7 +16,7 @@ class UpdateLabel():
 
         self.f1 = Frame(self.w1, bg='black', height=300, width=700)
         self.f1.pack(fill='both', expand=True)
-        
+
         #slp value label declaration
         self.slpValue = Label(self.f1, text="", bg='black', fg='white', font = ('Helvetica', 100, 'bold',))
         self.slpValue.place(relx=0.5, rely=0.35, anchor='center', relheight=0.7, relwidth=1)
@@ -63,10 +63,10 @@ class UpdateLabel():
             self.slpMarketCap['fg'] = "red"
             self.slpTotalVolume['fg'] = "red"
             print(" slp error")
-        
+
     def updater(self):
         self.time_str = strftime('%I:%M:%S %p')
-            
+
         self.timeCntr['text'] = self.time_str
 
         if strftime('%S') == "00":
@@ -74,7 +74,7 @@ class UpdateLabel():
 
         #update every 1 minute
         self.w1.after(1000, self.updater)
-        
+
 
 UL = UpdateLabel()
 
