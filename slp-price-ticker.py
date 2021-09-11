@@ -1,6 +1,5 @@
-from tkinter import *
 import requests
-
+from tkinter import *
 from time import strftime
 
 gas_min = 188292
